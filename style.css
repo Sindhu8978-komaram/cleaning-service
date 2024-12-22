@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: gray;
+}
+body {
+    font-family: "Frank Ruhl Libre", serif;
+    background-color: rgb(255,253,242);
+    overflow-x: hidden;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255,253,242);
+    padding: 30px 30px;
+    /* z-index: 2; */
+}
+ul li{
+    list-style: none;
+}
+.logo a{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+.nav-links a:hover {
+    color: #b43a3a;
+}
+.toggle {
+    display: none; /* Hide the checkbox */
+}
+.toggle-label {
+    display: none; /* Hide the label initially */
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+.booknow-btn {
+    border-radius: 20px;
+    padding: 2px 15px;
+    color: white;
+    background-color: black;
+}
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url("kitchen_img.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px; 
+}
+.main-text {
+    position: relative;
+    top: 30px;
+    right: 350px;
+    /* padding: 15px; */
+}
+.main-text h1, p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.main-text p{
+    font-size: 20px;
+}
+.booknow-btn-two {
+    font-family: "Red Hat Display", sans-serif;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    padding: 10px 30px;
+    font-weight: lighter;
+}
+.main-reviews{
+    padding: 20px;
+}
+.reviews {
+    display: flex;
+    /* margin-top: 50px; */
+    padding: 20px;
+}
+.cards .card{
+    background-color: rgb(255,249,175);
+    padding: 30px 15px;
+}
+.cards .row, .foot .row{
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for columns */
+    justify-content: center; /* Center the cards */
+}
+.cards .card-title {
+    float: left;
+}
+.cards .card p {
+    color: black;
+    font-size: 15px;
+}
+.services {
+    background-color: rgb(76,91,92);
+}
+.our-service {
+   text-align: center;
+   padding: 30px;
+   color: white;
+}
+.image-row{
+    display: flex;
+    justify-content: space-between; /* Equal spacing between images */
+    align-items: center; /* Center align images vertically */
+    max-width: 100%; /* Optional: Set a max width for the row */
+    margin: 0 auto; /* Center the row in its container */
+}
+.main-footer{
+    display: flex;
+    justify-content: space-between; /* Equal spacing between images */
+    align-items: center; /* Center align images vertically */
+    max-width: 100%; /* Optional: Set a max width for the row */
+    margin: 15px auto; /* Center the row in its container */
+  
+}
+.main-footer h5{
+    color: black;
+    font-weight: bold;
+}
+.cleaning{
+    display: flex;
+    /* justify-content: space-between;  */
+    align-items: center;
+    max-width: 100%;
+    margin: 50px;
+    /* padding: 50px 0px; */
+}
+.cleaning .cleaning-content{
+    margin-left: 100px;
+    text-align: center;
+}
+.image-container {
+    flex: 1; /* Allow containers to grow equally */
+    margin: 15px 30px; /* Optional: Add margin for spacing */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.image-container img {
+    width: 100%; /* Make image fill the container */
+    height: 400px; /* Maintain aspect ratio */
+    transition: transform 0.9s ease; /* Smooth zoom effect */
+    border-radius: 10px;
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+.service-btn {
+    text-align: center;
+    padding: 20px;
+}
+.ser-btn{
+    padding: 10px 30px;
+    background-color: white;
+    color: rgb(76,91,92);
+    border-radius: 30px;
+    font-size: 25px;
+    border: 0;
+}
+.ser-btn:hover{
+    background-color: rgb(76,91,92);
+    color: white;
+    border: 1px solid white;
+}
+.featured {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(255,249,175);
+}
+.featured-heading{
+    font-family: "Open Sans";
+}
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+    gap: 50px;
+}
+.latch {
+    /* font-weight: bold; */
+    font-family: "Oswald";
+}
+.stella {
+    font-family: "Yellowtail", cursive;
+}
+.gasp{
+    font-family: "Roboto";
+}
+.volve{
+    font-family: "Old Standard TT", serif;
+    font-weight: bold;
+}
+.foreva {
+    font-family: "Yellowtail", cursive;
+    font-weight: bold;
+}
+.bedsheet-container{
+    position: relative; /* Make the container relative */
+    width: 100%; /* Ensure the container takes full width */
+    height: 300px; /* Set the height */
+    overflow: hidden; /* Hide overflow */
+}
+.bedsheet-container img{
+    width: 100%;
+    height: 400px; 
+}
+.overlay {
+    position: absolute; /* Position overlay absolutely */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(124,127,121,0.5); /* Black with 50% transparency */
+}
+
+.content {
+    display: flex;
+    position: absolute; /* Position content absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    color: rgb(44, 41, 41); /* Text color */
+    text-align: center; /* Center the text */
+    gap: 50px;
+}
+.content .arrow, .foot{
+    color: rgb(255,249,175);
+}
+.content .circle{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255,249,175);
+    border-radius: 50px;
+}
+.arrow {
+    padding:  30px 10px;
+    font-size: larger;
+}
+.circle .drop, .circle .shirt, .circle .key, .circle .house, .circle div{
+    padding: 25px;
+    font-size: 30px;
+}
+.circle p {
+    margin-top: 15px; /* Space between icon and text */
+    font-size: 14px;
+    padding: 0;
+}
+
+.cleaning img{
+    width: 40%;
+    height: 350px;
+}
+.cleaning p{
+    color: gray;
+}
+.cleaning .cleaning-content{
+    margin-top:5px;
+    padding: 20px;
+}
+.cleaning .cleaning-content h1{
+    padding: 10px 0px;
+}
+
+.choose-btn{
+    margin-top: 10px;
+    padding: 15px 40px;
+    background-color:rgb(10,35,35);
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 0;
+}
+.shelf img{
+    width: 100%;
+    height: 500px;
+}
+.spark{
+    color: rgb(243, 194, 71);
+    font-size: 10px;
+    /* font-weight: bolder; */
+}
+.foot{
+    background-color: rgb(255,249,175);
+    padding: 45px;   
+}
+.foot p, .copywrite p{
+    color: black;
+}
+.foot-btn{
+    border: 0;
+    border-radius: 25px;
+    padding: 10px 50px;
+    background-color: black;
+    color: white;
+}
+.copywrite{
+    text-align: center;
+    padding: 10px;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: rgb(255, 250, 222);
+        width: 100%;
+        z-index: 1;
+        align-items: center;
+    }
+    .nav-links li {
+        padding: 5px 0;
+    }
+    .nav-links li a{
+        color: black;
+    }
+    .nav-links.show {
+        display: flex; /* Show nav links when the toggle is checked */
+    }
+    .toggle-label {
+        display: block; /* Show toggle label */
+    }
+    #toggle:checked + .toggle-label + .nav-links {
+        display: flex; /* Show nav links when checkbox is checked */
+    }
+    .main-section {
+        display: flex;
+        background-image: url("kitchen_img.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 100%;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .main-text{
+        position: relative;
+        left: 10px;
+    }
+    .main-text h1, .main-text p {
+        font-size: 12px;
+    }
+    .booknow-btn-two {
+        font-family: "Red Hat Display", sans-serif;
+        border-radius: 25px;
+        color: black;
+        background-color: white;
+        padding: 3px 10px;
+        font-size: 10px;
+        font-weight: 20px;
+    }
+    .main-reviews {
+        padding: 0;
+    }
+    .reviews h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center text */
+    }
+    .cards .row, .foot .row, .image-row {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align cards */
+    }
+    .cards .col, .foot .col {
+        width: 90%; /* Full width for mobile */
+        margin: 10px 0; /* Vertical spacing */
+    }
+    .ser-btn{
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+    .brands{
+        display: flex;
+        flex-direction: column;
+    }
+    .cleaning{
+        display: flex;
+        flex-direction: column;
+    }
+    .cleaning img{
+        width: 100%;
+    }
+    .cleaning .cleaning-content{
+       margin: 0;
+    }
+    .main-footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* margin-bottom: 30px; */
+    }
+    .foot-logo, .foot-legal, .foot-openings, .foot-contact{
+        margin-bottom: 20px;
+   }
+    .bedsheet-container img{
+        height: 200px;
+    }
+    .bedsheet-container img, .overlay{
+        width: 100%;
+        height: 250px;
+    }
+    .content{
+        gap: 10px;
+    }
+    .content .circle{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+    .circle .drop, .circle .shirt, .circle .key, .circle .house, .arrow{
+        padding: 10px 3px;
+        font-size: 20px;
+    }
+    .circle p{
+        font-size: 7px;
+    }
+    .foot .foots{
+        justify-content: center;
+    }
+}
+
